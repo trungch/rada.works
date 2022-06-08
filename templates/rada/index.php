@@ -44,10 +44,10 @@ $paramsFontScheme = $this->params->get('useFontScheme', false);
 $fontStyles       = '';
 
 // Enable assets
-	$wa->usePreset('template.cassiopeia.' . ($this->direction === 'rtl' ? 'rtl' : 'ltr'));
+$wa->usePreset('template.cassiopeia.' . ($this->direction === 'rtl' ? 'rtl' : 'ltr'));
 
 // Override 'template.active' asset to set correct ltr/rtl dependency
-$wa->registerStyle('template.active', '', [], [], ['template.cassiopeia.' . ($this->direction === 'rtl' ? 'rtl' : 'ltr')]);
+$wa->registerStyle('template.active', '', [], [], ['template.rada.' . ($this->direction === 'rtl' ? 'rtl' : 'ltr')]);
 
 // Logo file or site title param
 if ($this->params->get('logoFile'))
@@ -90,6 +90,12 @@ $wa->getAsset('style', 'fontawesome')->setAttribute('rel', 'lazy-stylesheet');
 <head>
 	<jdoc:include type="metas" />
 	<jdoc:include type="styles" />
+
+	<!-- Add google font -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet"> 
+	
 	<jdoc:include type="scripts" />
 </head>
 
@@ -107,23 +113,25 @@ $wa->getAsset('style', 'fontawesome')->setAttribute('rel', 'lazy-stylesheet');
 	<!-- HEADER -->
 	<header id="ra-header" class="ra-header">
 		<div class="container">
-			<!-- Brand logo -->
-			<div class="ra-brand">
-				<a href="/index.php" title="Rada network">Rada</a>
-			</div>
-			<!-- // Brand logo -->
+			<div class="header-wrap d-flex align-items-center">
+				<!-- Brand logo -->
+				<div class="ra-brand">
+					<a href="/index.php" title="Rada network">Rada</a>
+				</div>
+				<!-- // Brand logo -->
 
-			<!-- Main navigation -->
-			<div class="ra-mainnav">
-				<jdoc:include type="modules" name="main-nav" style="none" />
-			</div>
-			<!-- // Main navigation -->
+				<!-- Main navigation -->
+				<div class="ra-mainnav">
+					<jdoc:include type="modules" name="mainnav" style="none" />
+				</div>
+				<!-- // Main navigation -->
 
-			<!-- Header right -->
-			<div class="ra-header-r">
-				<jdoc:include type="modules" name="header-r" style="none" />
+				<!-- Header right -->
+				<div class="ra-header-r ms-auto">
+					<jdoc:include type="modules" name="header-r" style="none" />
+				</div>
+				<!-- // Header right -->
 			</div>
-			<!-- // Header right -->
 		</div>
 	</header>
 	<!-- // HEADER -->
@@ -137,7 +145,7 @@ $wa->getAsset('style', 'fontawesome')->setAttribute('rel', 'lazy-stylesheet');
 	<!-- // HERO -->
 
 	<!-- FOOTER NAVIGATION -->
-	<div id="ra-footnav" class="ra-footnav">
+	<div id="ra-footnav" class="ra-sec-dark ra-footnav">
 		<div class="container">
 			<div class="row">
 				<div class="col-6 col-lg-2">
@@ -161,7 +169,7 @@ $wa->getAsset('style', 'fontawesome')->setAttribute('rel', 'lazy-stylesheet');
 	<!-- // FOOTER NAVIGATION -->
 	
 	<!-- FOOTER -->
-	<footer id="ra-footer" class="ra-footer">
+	<footer id="ra-footer" class="ra-sec-dark ra-footer">
 		<div class="container">
 			<div class="row">
 				<div class="col-6"><small>&copy; 2022 Rada</small></div>
@@ -175,7 +183,6 @@ $wa->getAsset('style', 'fontawesome')->setAttribute('rel', 'lazy-stylesheet');
 			</div>
 		</div>
 	</footer>
-
 	<!-- // FOOTER -->
 
 	<jdoc:include type="modules" name="debug" style="none" />

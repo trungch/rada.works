@@ -13,6 +13,7 @@
 
 // Blocks
 @import "blocks/global"; // Leave this first
+@import "blocks/hero";
 @import "blocks/alerts";
 @import "blocks/back-to-top";
 @import "blocks/banner";
@@ -29,6 +30,7 @@
 @import "blocks/toolbar";
 @import "blocks/legacy";
 @import "blocks/tags";
+@import "blocks/home";
 @import "blocks/css-grid"; // Last to allow fallback
 
 // Vendor overrides
