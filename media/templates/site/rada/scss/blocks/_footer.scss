@@ -1,44 +1,28 @@
 // Footer
-
-.footer {
-  margin-top: $cassiopeia-grid-gutter;
-  color: $white;
-  background-color: var(--cassiopeia-color-primary);
-  background-image: $cassiopeia-header-grad;
-
-  .grid-child {
-    align-items: center;
-    justify-content: space-between;
-    padding: 2.5rem ($cassiopeia-grid-gutter * .5);
+.ra-footer {
+  .container {
+    border-top: 1px solid #1F2937;
+    padding: 32px 0;
   }
 
-  a {
-    color: currentColor;
-  }
+  .social-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
 
-  [dir=rtl] & {
-    background-image: $cassiopeia-header-grad-rtl;
-  }
-
-  .mod-menu {
-    position: relative;
-  }
-
-  @if $metismenu==true {
-    .metismenu.mod-menu {
-      .mm-collapse {
-        background: var(--cassiopeia-color-primary);
-      }
+    > li {
+      margin-left: 8px;
     }
-  }
 
-  @include media-breakpoint-down(lg) {
-    .grid-child {
-      flex-direction: column;
-
-      .mod-footer {
-        margin: .375rem 0;
-      }
+    a {
+      background-color: #1F2937;
+      border-radius: 8px;
+      display: block;
+      font-size: 12px;
+      height: 32px;
+      line-height: 32px;
+      text-align: center;
+      width: 32px;
     }
   }
 }

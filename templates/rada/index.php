@@ -174,7 +174,7 @@ $wa->getAsset('style', 'fontawesome')->setAttribute('rel', 'lazy-stylesheet');
 			<div class="row">
 				<div class="col-6"><small>&copy; 2022 Rada</small></div>
 				<div class="col-6">
-					<ul class="social-links float-end">
+					<ul class="social-links float-end d-flex align-items-center">
 						<li><a href="#" title="Facebook"><i class="fab fa-facebook"></i></a></li>
 						<li><a href="#" title="Twitter"><i class="fab fa-twitter"></i></a></li>
 						<li><a href="#" title="Instagram"><i class="fab fa-instagram"></i></a></li>
