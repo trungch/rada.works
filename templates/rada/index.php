@@ -149,19 +149,19 @@ $wa->getAsset('style', 'fontawesome')->setAttribute('rel', 'lazy-stylesheet');
 		<div class="container">
 			<div class="row">
 				<div class="col-6 col-lg-2">
-					<jdoc:include type="modules" name="footnav-1" style="card" />
+					<jdoc:include type="modules" name="footnav-1" style="jaXhtml" />
 				</div>
 
 				<div class="col-6 col-lg-2">
-					<jdoc:include type="modules" name="footnav-2" style="card" />
+					<jdoc:include type="modules" name="footnav-2" style="jaXhtml" />
 				</div>
 
 				<div class="col-6 col-lg-2">
-					<jdoc:include type="modules" name="footnav-3" style="card" />
+					<jdoc:include type="modules" name="footnav-3" style="jaXhtml" />
 				</div>
 
 				<div class="col-6 col-lg-4 offset-lg-2">
-					<jdoc:include type="modules" name="footnav-4" style="card" />
+					<jdoc:include type="modules" name="footnav-4" style="jaXhtml" />
 				</div>
 			</div>
 		</div>

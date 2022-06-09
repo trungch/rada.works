@@ -33,6 +33,9 @@
   --link-color: var(--ra-primary);
   --link-color-hover: hsl(222, 99%, 30%);
   --border-color: var(--gray-300);
+  --border-radius: 0.5rem;
+  --border-radius-sm: 0.375rem;
+  --border-radius-lg: 0.75rem;
   --font-family-base: "Inter", sans-serif;
   --font-size-base: 15px;
   --h1-font-size: 60px;
@@ -47,6 +50,7 @@
   --sec-text-color: var(--body-color);
   --sec-link-color: var(--ra-primary);
   --sec-link-hover-color: var(--ra-primary);
+  --spacer: 1rem;
 }
 
 /*!
@@ -12832,9 +12836,28 @@ meter {
   color: var(--link-hover-color);
 }
 
+.ra-footnav .container {
+  padding: calc(var(--spacer) * 6) 0;
+}
+.ra-footnav .module-title {
+  color: var(--white);
+  font-size: var(--h4-font-size);
+  font-weight: 700;
+  margin: 0 0 var(--spacer);
+}
+.ra-footnav .navbar {
+  padding: 0;
+}
+.ra-footnav .mod-menu {
+  padding: 0;
+}
+.ra-footnav .mod-menu > li {
+  margin-bottom: calc(var(--spacer) / 2);
+}
+
 .ra-footer .container {
   border-top: 1px solid #1F2937;
-  padding: 32px 0;
+  padding: calc(var(--spacer) * 2) 0;
 }
 .ra-footer .social-links {
   list-style: none;
