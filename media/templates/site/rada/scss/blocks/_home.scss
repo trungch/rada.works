@@ -1,0 +1,25 @@
+.ra-sec {
+  .container {
+    padding: calc(var(--spacer) * 6) 0;
+  }
+}
+
+
+// SECTION 6
+.ra-sec-6 {
+  z-index: 30;
+  
+  .container {
+    position: relative;
+  }
+
+  .sec-decor {
+    background: url(../images/sec-6-decor.png) no-repeat center center;
+    position: absolute;
+    top: -148px;
+    bottom: -148px;
+    left: -148px;
+    height: 840px;
+    width: 840px;
+  }
+}

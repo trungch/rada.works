@@ -144,6 +144,61 @@ $wa->getAsset('style', 'fontawesome')->setAttribute('rel', 'lazy-stylesheet');
 	</div>
 	<!-- // HERO -->
 
+	<!-- SECTION 6 -->
+	<div class="ra-sec ra-sec-dark ra-sec-5">
+		<div class="container">
+			<div class="row">
+				<div class="col-12 col-lg-4">
+					<div class="sec-heading">
+						<h2>Why Rada.works?</h2>
+						<p class="lead">Our platform makes it possible for every artist to kickstart their Web3 career. Whether it is to take part in a NFT project or a Metaverse Game, artists can freely contribute and reap the reward in a completely trustless way.</p>
+					</div>
+				</div>
+
+				<div class="col-12 col-lg-4">
+					<div class="fd-item">
+						<span class="item-ico"><img src="http://localhost/rada_works/rada.works/templates/rada/icons/ico-1.svg" alt="Icon 1" /></span>
+						<div class="item-ct">
+							<h5>World-class NFT designers</h5>
+							<p>Work with the best dedicated NFT designers to get your perfect NFT designs.</p>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+	<!-- // SECTION 6 -->
+
+	<!-- SECTION 6 -->
+	<div class="ra-sec ra-sec-5">
+		<div class="container">
+			Our blog
+		</div>
+	</div>
+	<!-- // SECTION 6 -->
+
+	<!-- SECTION 6 -->
+	<div class="ra-sec ra-sec-primary ra-sec-6">
+		<div class="container">
+			<div class="row">
+				<div class="sec-decor">&nbsp;</div>
+
+				<div class="col-12 col-lg-5 offset-lg-7">
+					<div class="sec-heading">
+						<h2>Opps... Some text with two lines goes here</h2>
+						<p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ac leo dui. Sed porttitor augue erat, a hendrerit neque iverra et. Nulla ut nibh a metus.</p>
+						<div class="cta-wrap d-flex align-items-center">
+							<a href="#" title="Get design" class="btn btn-lg btn-rounded btn-light me-3">Get Design</a>
+							<a href="#" title="See contest"class="btn btn-lg btn-rounded btn-light">See contest</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- // SECTION 6 -->
+
 	<!-- FOOTER NAVIGATION -->
 	<div id="ra-footnav" class="ra-sec-dark ra-footnav">
 		<div class="container">
