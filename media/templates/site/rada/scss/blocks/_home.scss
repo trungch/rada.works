@@ -1,3 +1,41 @@
+// WHY RADA
+// ------------------------------------
+.ra-sec-1 {
+  border-bottom: 1px solid var(--border-color);
+}
+
+.fd-item {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: calc(var(--spacer) * 2);
+
+  .item-ico {
+    background-color: rgba(255, 255, 255, .1);
+    border-radius: var(--border-radius-lg);
+    height: 48px;
+    line-height: 48px;
+    text-align: center;
+    margin-right: calc(var(--spacer) * 1.5);
+    width: 48px;
+  }
+
+  .item-ct {
+    flex: 1;
+
+    h5 {
+      font-size: var(--h4-font-size);
+      color: var(--white);
+      margin-bottom: calc(var(--spacer) * .5);
+    }
+
+    p {
+      line-height: 24px;
+      margin: 0;
+    }
+  }
+}
+
+
 .ra-sec {
   .container {
     padding: calc(var(--spacer) * 6) 0;
@@ -6,6 +44,7 @@
 
 
 // SECTION 6
+// ------------------------------------
 .ra-sec-6 {
   z-index: 30;
   

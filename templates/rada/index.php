@@ -144,8 +144,8 @@ $wa->getAsset('style', 'fontawesome')->setAttribute('rel', 'lazy-stylesheet');
 	</div>
 	<!-- // HERO -->
 
-	<!-- SECTION 6 -->
-	<div class="ra-sec ra-sec-dark ra-sec-5">
+	<!-- SECTION 1 -->
+	<div class="ra-sec ra-sec-dark ra-sec-1">
 		<div class="container">
 			<div class="row">
 				<div class="col-12 col-lg-4">
@@ -157,10 +157,52 @@ $wa->getAsset('style', 'fontawesome')->setAttribute('rel', 'lazy-stylesheet');
 
 				<div class="col-12 col-lg-4">
 					<div class="fd-item">
-						<span class="item-ico"><img src="http://localhost/rada_works/rada.works/templates/rada/icons/ico-1.svg" alt="Icon 1" /></span>
+						<span class="item-ico"><img src="<?php echo JUri::root(true); ?>/templates/rada/icons/ico-1.svg" alt="World-class NFT designers" /></span>
 						<div class="item-ct">
 							<h5>World-class NFT designers</h5>
 							<p>Work with the best dedicated NFT designers to get your perfect NFT designs.</p>
+						</div>
+					</div>
+
+					<div class="fd-item">
+						<span class="item-ico"><img src="<?php echo JUri::root(true); ?>/templates/rada/icons/ico-2.svg" alt="Full Ownership" /></span>
+						<div class="item-ct">
+							<h5>Full Ownership</h5>
+							<p>Once a project is marked done, the project creator owns full control of the art.</p>
+						</div>
+					</div>
+
+					<div class="fd-item">
+						<span class="item-ico"><img src="<?php echo JUri::root(true); ?>/templates/rada/icons/ico-3.svg" alt="Freely configure your contests" /></span>
+						<div class="item-ct">
+							<h5>Freely configure your contests</h5>
+							<p>Set your contest to private as you like, so only designers can view and submit.</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-12 col-lg-4">
+					<div class="fd-item">
+						<span class="item-ico"><img src="<?php echo JUri::root(true); ?>/templates/rada/icons/ico-4.svg" alt="World-class NFT designers" /></span>
+						<div class="item-ct">
+							<h5>Multiple Designs & Revisions</h5>
+							<p>More designs & revisions from NFT designers around the world until your vision is satisfied.</p>
+						</div>
+					</div>
+
+					<div class="fd-item">
+						<span class="item-ico"><img src="<?php echo JUri::root(true); ?>/templates/rada/icons/ico-5.svg" alt="Full Ownership" /></span>
+						<div class="item-ct">
+							<h5>Trustless collaborations</h5>
+							<p>You can ask for refined design and release the award once you are satisfied with the design.</p>
+						</div>
+					</div>
+
+					<div class="fd-item">
+						<span class="item-ico"><img src="<?php echo JUri::root(true); ?>/templates/rada/icons/ico-6.svg" alt="Freely configure your contests" /></span>
+						<div class="item-ct">
+							<h5>Pay with Crypto</h5>
+							<p>Release awards in any supported token, any chain.</p>
 						</div>
 					</div>
 				</div>
@@ -168,15 +210,82 @@ $wa->getAsset('style', 'fontawesome')->setAttribute('rel', 'lazy-stylesheet');
 			</div>
 		</div>
 	</div>
-	<!-- // SECTION 6 -->
+	<!-- // SECTION 1 -->
 
-	<!-- SECTION 6 -->
+
+	<!-- SECTION 2 -->
+	<div class="ra-sec ra-sec-dark ra-sec-2">
+		<div class="container">
+			<div class="row">
+				<div class="col-12 col-lg-7">&nbsp;</div>
+				<div class="col-12 col-lg-5">
+					<div class="">
+						<h2 class="mt-0 mb-4">Multi Entries from experienced designers.</h2>
+						<div class="fd-item">
+							<span class="item-ico"><img src="<?php echo JUri::root(true); ?>/templates/rada/icons/ico-7.svg" alt="Submit NFT design contest" /></span>
+							<div class="item-ct">
+								<h5>Submit NFT design contest</h5>
+								<p>Create NFT contests for which artists can easily join. Evaluate, refine, get designs, and release awards in popular supported token, reducing transaction fees.</p>
+							</div>
+						</div>
+
+						<div class="fd-item">
+							<span class="item-ico"><img src="<?php echo JUri::root(true); ?>/templates/rada/icons/ico-8.svg" alt="Rate and review designers" /></span>
+							<div class="item-ct">
+								<h5>Rate and review designers</h5>
+								<p>Work with the best dedicated NFT designers to get your perfect NFT designs.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-12 col-lg-5">
+					<div class="">
+						<h2 class="mt-0 mb-4">Work from everywhere. Get reward with Crypto.</h2>
+						<div class="fd-item">
+							<span class="item-ico"><img src="<?php echo JUri::root(true); ?>/templates/rada/icons/ico-7.svg" alt="Submit NFT design contest" /></span>
+							<div class="item-ct">
+								<h5>Submit NFT design contest</h5>
+								<p>Create NFT contests for which artists can easily join. Evaluate, refine, get designs, and release awards in popular supported token, reducing transaction fees.</p>
+							</div>
+						</div>
+
+						<div class="fd-item">
+							<span class="item-ico"><img src="<?php echo JUri::root(true); ?>/templates/rada/icons/ico-8.svg" alt="Submit NFT design contest" /></span>
+							<div class="item-ct">
+								<h5>Rate and review designers</h5>
+								<p>Work with the best dedicated NFT designers to get your perfect NFT designs.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-lg-7">&nbsp;</div>
+			</div>
+
+			<div class="row">
+				<div class="col-12 col-lg-6 offset-lg-3">
+					<div class="sec-heading text-center">
+						<h2 class="mb-4">How it works?</h2>
+						<p class="lead">Anyone can create a contest and anyone can join as an artist. We escrow the fund in exchange between the parties until both are satisfied.</p>
+					</div>
+				</div>
+			</div>
+
+
+		</div> <!-- // Container -->
+	</div>
+	<!-- // SECTION 2 -->
+
+
+	<!-- SECTION 5 -->
 	<div class="ra-sec ra-sec-5">
 		<div class="container">
 			Our blog
 		</div>
 	</div>
-	<!-- // SECTION 6 -->
+	<!-- // SECTION 5 -->
 
 	<!-- SECTION 6 -->
 	<div class="ra-sec ra-sec-primary ra-sec-6">

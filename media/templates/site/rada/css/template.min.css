@@ -12574,6 +12574,10 @@ body {
   font-weight: 400;
 }
 
+.row {
+  --bs-gutter-x: 2rem;
+}
+
 img {
   max-width: 100%;
   height: auto;
@@ -12958,6 +12962,43 @@ meter {
   line-height: 32px;
   text-align: center;
   width: 32px;
+}
+
+.ra-sec-1 {
+  border-bottom: 1px solid var(--border-color);
+}
+
+.fd-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin-bottom: calc(var(--spacer) * 2);
+}
+.fd-item .item-ico {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: var(--border-radius-lg);
+  height: 48px;
+  line-height: 48px;
+  text-align: center;
+  margin-right: calc(var(--spacer) * 1.5);
+  width: 48px;
+}
+.fd-item .item-ct {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+.fd-item .item-ct h5, .fd-item .item-ct .h5 {
+  font-size: var(--h4-font-size);
+  color: var(--white);
+  margin-bottom: calc(var(--spacer) * 0.5);
+}
+.fd-item .item-ct p {
+  line-height: 24px;
+  margin: 0;
 }
 
 .ra-sec .container {
