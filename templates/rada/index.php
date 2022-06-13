@@ -359,7 +359,14 @@ $wa->getAsset('style', 'fontawesome')->setAttribute('rel', 'lazy-stylesheet');
 	<!-- SECTION 5 -->
 	<div class="ra-sec ra-sec-5">
 		<div class="container">
-			Our blog
+			<div class="row">
+				<div class="col-12 col-lg-6 offset-lg-3">
+					<div class="sec-heading text-center">
+						<h2>News and Updates</h2>
+						<p class="lead">Anyone can create a contest and anyone can join as an artist. We escrow the fund in exchange between the parties until both are satisfied.</p>
+					</div>
+				</div>
+			</div>
 		</div>
 	</div>
 	<!-- // SECTION 5 -->
