@@ -38,7 +38,7 @@
   --border-radius-lg: 1rem;
   --font-family-base: "Inter", sans-serif;
   --font-size-base: 15px;
-  --h1-font-size: 60px;
+  --h1-font-size: 64px;
   --h2-font-size: 40px;
   --h3-font-size: 24px;
   --h4-font-size: 18px;
@@ -12639,7 +12639,7 @@ a.navbar-brand {
 }
 
 .btn {
-  font-weight: 700;
+  font-weight: 500;
 }
 
 .btn-light {
@@ -12918,6 +12918,201 @@ meter {
   color: var(--link-hover-color);
 }
 
+div.ra-hero {
+  background: url(../images/hero-bg.png) no-repeat center center;
+  margin-top: -102px;
+}
+div.ra-hero .container {
+  position: relative;
+  padding-top: 240px;
+  padding-bottom: 240px;
+}
+div.ra-hero h1, div.ra-hero .h1 {
+  color: #1F2937;
+  letter-spacing: -0.02em;
+  line-height: 72px;
+}
+div.ra-hero h1 span, div.ra-hero .h1 span {
+  background: url(../images/hilite.svg) no-repeat center bottom;
+  display: inline-block;
+}
+div.ra-hero .hero-decor {
+  background: url(../images/hero-decor.png) no-repeat center center;
+  position: absolute;
+  left: calc(50% + 32px);
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  height: 736px;
+  width: 736px;
+}
+
+.ra-header {
+  padding: calc(var(--spacer) * 2) 0;
+}
+.ra-header .ra-mainnav .navbar {
+  padding: 0;
+}
+.ra-header .ra-mainnav .nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+.ra-header .ra-mainnav .nav > li {
+  padding: 0 var(--spacer);
+}
+.ra-header .ra-mainnav .nav a {
+  color: #262626;
+  font-weight: 600;
+}
+
+.fd-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin-bottom: calc(var(--spacer) * 2);
+}
+.fd-item .item-ico {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: var(--border-radius-lg);
+  height: 48px;
+  line-height: 48px;
+  text-align: center;
+  margin-right: calc(var(--spacer) * 1.5);
+  width: 48px;
+}
+.fd-item .item-ct {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+.fd-item .item-ct h5, .fd-item .item-ct .h5 {
+  font-size: var(--h4-font-size);
+  color: var(--white);
+  margin-bottom: var(--spacer);
+}
+.fd-item .item-ct p {
+  line-height: 24px;
+  margin: 0;
+}
+
+.ra-sec .container {
+  padding: calc(var(--spacer) * 6) 0;
+}
+
+.ra-sec-1 .container {
+  padding: 0;
+}
+.ra-sec-1 .ra-box {
+  background-color: var(--white);
+  color: var(--body-color);
+  border-radius: var(--border-radius-lg);
+  margin-top: -128px;
+  min-height: 256px;
+  padding: calc(var(--spacer) * 2);
+  padding-right: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.ra-sec-1 .ra-box h4, .ra-sec-1 .ra-box .h4 {
+  color: #1F2937;
+  font-size: 21px;
+  font-weight: 600;
+}
+.ra-sec-1 .ra-box .action-wrap {
+  margin-top: auto;
+}
+.ra-sec-1 .ra-box-1 {
+  background: url(../images/card-decor-1.png) no-repeat center right #F5F3FF;
+}
+.ra-sec-1 .ra-box-1 .btn {
+  background-color: #8B5CF6;
+  color: var(--white);
+}
+.ra-sec-1 .ra-box-2 {
+  background: url(../images/card-decor-2.png) no-repeat center right #F7FEE7;
+}
+.ra-sec-1 .ra-box-2 .btn {
+  background-color: #84CC16;
+  color: var(--white);
+}
+
+.ra-sec-4 {
+  background: url(../images/dark-bg.png) no-repeat center center var(--ra-dark);
+  background-size: cover;
+}
+.ra-sec-4 .featured-row {
+  margin-bottom: calc(var(--spacer) * 10);
+}
+.ra-sec-4 .step {
+  position: relative;
+}
+.ra-sec-4 .step::after {
+  content: "";
+  display: block;
+  height: 24px;
+  position: absolute;
+  top: 0;
+  left: calc(50% + 48px);
+  width: 192px;
+}
+.ra-sec-4 .step.step-1::after, .ra-sec-4 .step.step-3::after {
+  background: url(../images/arrow-down.svg) no-repeat center center;
+}
+.ra-sec-4 .step.step-2::after {
+  background: url(../images/arrow-up.svg) no-repeat center center;
+  top: 48px;
+}
+.ra-sec-4 .badge-number {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  color: var(--white);
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: calc(var(--spacer) * 1.5);
+  height: 48px;
+  line-height: 48px;
+  text-align: center;
+  width: 48px;
+}
+.ra-sec-4 h5, .ra-sec-4 .h5 {
+  color: var(--white);
+  font-size: 18px;
+  margin-bottom: var(--spacer);
+}
+
+.ra-sec-6 {
+  z-index: 30;
+}
+.ra-sec-6 .container {
+  position: relative;
+}
+.ra-sec-6 .sec-decor {
+  background: url(../images/sec-6-decor.png) no-repeat center center;
+  position: absolute;
+  top: -148px;
+  bottom: -148px;
+  left: -148px;
+  height: 840px;
+  width: 840px;
+}
+
 .ra-footnav {
   z-index: 40;
   position: relative;
@@ -12962,63 +13157,6 @@ meter {
   line-height: 32px;
   text-align: center;
   width: 32px;
-}
-
-.ra-sec-1 {
-  border-bottom: 1px solid var(--border-color);
-}
-
-.fd-item {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  margin-bottom: calc(var(--spacer) * 2);
-}
-.fd-item .item-ico {
-  background-color: rgba(255, 255, 255, 0.1);
-  border-radius: var(--border-radius-lg);
-  height: 48px;
-  line-height: 48px;
-  text-align: center;
-  margin-right: calc(var(--spacer) * 1.5);
-  width: 48px;
-}
-.fd-item .item-ct {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-}
-.fd-item .item-ct h5, .fd-item .item-ct .h5 {
-  font-size: var(--h4-font-size);
-  color: var(--white);
-  margin-bottom: calc(var(--spacer) * 0.5);
-}
-.fd-item .item-ct p {
-  line-height: 24px;
-  margin: 0;
-}
-
-.ra-sec .container {
-  padding: calc(var(--spacer) * 6) 0;
-}
-
-.ra-sec-6 {
-  z-index: 30;
-}
-.ra-sec-6 .container {
-  position: relative;
-}
-.ra-sec-6 .sec-decor {
-  background: url(../images/sec-6-decor.png) no-repeat center center;
-  position: absolute;
-  top: -148px;
-  bottom: -148px;
-  left: -148px;
-  height: 840px;
-  width: 840px;
 }
 
 .chzn-container-single {

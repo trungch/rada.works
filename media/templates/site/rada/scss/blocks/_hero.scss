@@ -1,2 +1,31 @@
-.ra-hero {
+div.ra-hero {
+  background: url(../images/hero-bg.png) no-repeat center center;
+  margin-top: -102px;
+
+  .container {
+    position: relative;
+    padding-top: 240px;
+    padding-bottom: 240px;
+  }
+
+  h1 {
+    color: #1F2937;
+    letter-spacing: -0.02em;
+    line-height: 72px;
+
+    span {
+      background: url(../images/hilite.svg) no-repeat center bottom;
+      display: inline-block;
+    }
+  }
+
+  .hero-decor {
+    background: url(../images/hero-decor.png) no-repeat center center;
+    position: absolute;
+    left: calc(50% + 32px);
+    top: 50%;
+    transform: translateY(-50%);
+    height: 736px;
+    width: 736px;
+  }
 }

@@ -1,9 +1,6 @@
+
 // WHY RADA
 // ------------------------------------
-.ra-sec-1 {
-  border-bottom: 1px solid var(--border-color);
-}
-
 .fd-item {
   display: flex;
   align-items: flex-start;
@@ -25,7 +22,7 @@
     h5 {
       font-size: var(--h4-font-size);
       color: var(--white);
-      margin-bottom: calc(var(--spacer) * .5);
+      margin-bottom: var(--spacer);
     }
 
     p {
@@ -39,6 +36,112 @@
 .ra-sec {
   .container {
     padding: calc(var(--spacer) * 6) 0;
+  }
+}
+
+
+// SECTION 1
+// ------------------------------------
+.ra-sec-1 {
+  .container {
+    padding: 0;
+  }
+
+  .ra-box {
+    background-color: var(--white);
+    color: var(--body-color);
+    border-radius: var(--border-radius-lg);
+    margin-top: -128px;
+    min-height: 256px;
+    padding: calc(var(--spacer) * 2);
+    padding-right: 40%;
+    display: flex;
+    flex-direction: column;
+
+    h4 {
+      color: #1F2937;
+      font-size: 21px;
+      font-weight: 600;
+    }
+
+    .action-wrap {
+      margin-top: auto;
+    }
+  }
+
+  .ra-box-1 {
+    background: url(../images/card-decor-1.png) no-repeat center right #F5F3FF;
+
+    .btn {
+      background-color: #8B5CF6;
+      color: var(--white);
+    }
+  }
+
+  .ra-box-2 {
+    background: url(../images/card-decor-2.png) no-repeat center right #F7FEE7;
+
+    .btn {
+      background-color: #84CC16;
+      color: var(--white);
+    }
+  }
+}
+
+
+// SECTION 2
+// ------------------------------------
+.ra-sec-4 {
+  background: url(../images/dark-bg.png) no-repeat center center var(--ra-dark);
+  background-size: cover;
+
+  // Feature row
+  .featured-row {
+    margin-bottom: calc(var(--spacer) * 10);
+  }
+
+  // Steps
+  .step {
+    position: relative;
+
+    &::after {
+      content: "";
+      display: block;
+      height: 24px;
+      position: absolute;
+      top: 0;
+      left: calc(50% + 48px);
+      width: 192px;
+    }
+
+    &.step-1::after,
+    &.step-3::after {
+      background: url(../images/arrow-down.svg) no-repeat center center;
+    }
+
+    &.step-2::after {
+      background: url(../images/arrow-up.svg) no-repeat center center;
+      top: 48px;
+    }
+  }
+  .badge-number {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    color: var(--white);
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: calc(var(--spacer) * 1.5);
+    height: 48px;
+    line-height: 48px;
+    text-align: center;
+    width: 48px;
+  }
+
+  h5 {
+    color: var(--white);
+    font-size: 18px;
+    margin-bottom: var(--spacer);
   }
 }
 

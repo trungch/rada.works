@@ -139,13 +139,52 @@ $wa->getAsset('style', 'fontawesome')->setAttribute('rel', 'lazy-stylesheet');
 	<!-- HERO -->
 	<div id="ra-hero" class="ra-sec ra-hero">
 		<div class="container">
-		<jdoc:include type="modules" name="hero" style="none" />
+			<div class="row">
+				<div class="col-12 col-lg-5">
+					<div class="hero-ct">
+						<h1 class="mt-0 mb-3">A multichain <span>NFT design</span> platform</h1>
+						<p class="lead mt-0 mb-5">A multi-function platform where anyone can make money, simply by working.</p>
+						<div class="action-wrap">
+							<a href="#" title="Get started" class="btn btn-primary btn-lg btn-rounded">Get started</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="hero-decor"></div>
+			</div>
 		</div>
 	</div>
 	<!-- // HERO -->
 
-	<!-- SECTION 1 -->
+	<!-- // HERO -->
 	<div class="ra-sec ra-sec-dark ra-sec-1">
+		<div class="container">
+			<div class="row">
+				<div class="col-12 col-lg-6">
+					<div class="ra-box ra-box-1">
+						<h4>For Project creators</h4>
+						<p>Work with the best dedicated NFT designers to get your perfect NFT designs.</p>
+						<div class="action-wrap">
+							<a href="#" title="I amm a project creator" class="btn btn-rounded">I'm a project creator</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-12 col-lg-6">
+					<div class="ra-box ra-box-2">
+						<h4>For NFT Artists</h4>
+						<p>More designs & revisions from NFT designers around the world until your vision is satisfied.</p>
+						<div class="action-wrap">
+							<a href="#" title="I amm a project creator" class="btn btn-rounded">I'm an NFT artist</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- SECTION 1 -->
+	<div class="ra-sec ra-sec-dark ra-sec-2">
 		<div class="container">
 			<div class="row">
 				<div class="col-12 col-lg-4">
@@ -214,10 +253,11 @@ $wa->getAsset('style', 'fontawesome')->setAttribute('rel', 'lazy-stylesheet');
 
 
 	<!-- SECTION 2 -->
-	<div class="ra-sec ra-sec-dark ra-sec-2">
+	<div class="ra-sec ra-sec-dark ra-sec-4">
 		<div class="container">
-			<div class="row">
-				<div class="col-12 col-lg-7">&nbsp;</div>
+
+			<div class="row align-items-center featured-row">
+				<div class="col-12 col-lg-7"><div class="item-decor"><img src="images/icons/ico-2.png" alt="Multi Entries from experienced designers." /></div></div>
 				<div class="col-12 col-lg-5">
 					<div class="">
 						<h2 class="mt-0 mb-4">Multi Entries from experienced designers.</h2>
@@ -240,7 +280,7 @@ $wa->getAsset('style', 'fontawesome')->setAttribute('rel', 'lazy-stylesheet');
 				</div>
 			</div>
 
-			<div class="row">
+			<div class="row align-items-center featured-row">
 				<div class="col-12 col-lg-5">
 					<div class="">
 						<h2 class="mt-0 mb-4">Work from everywhere. Get reward with Crypto.</h2>
@@ -261,14 +301,51 @@ $wa->getAsset('style', 'fontawesome')->setAttribute('rel', 'lazy-stylesheet');
 						</div>
 					</div>
 				</div>
-				<div class="col-12 col-lg-7">&nbsp;</div>
+				<div class="col-12 col-lg-7"><div class="item-decor"><img src="images/icons/ico-3.png" alt="Multi Entries from experienced designers." /></div></div>
 			</div>
 
-			<div class="row">
+			<div class="row how-it-work">
 				<div class="col-12 col-lg-6 offset-lg-3">
-					<div class="sec-heading text-center">
+					<div class="sec-heading text-center pb-2">
 						<h2 class="mb-4">How it works?</h2>
-						<p class="lead">Anyone can create a contest and anyone can join as an artist. We escrow the fund in exchange between the parties until both are satisfied.</p>
+						<p class="lead mb-5">Anyone can create a contest and anyone can join as an artist. We escrow the fund in exchange between the parties until both are satisfied.</p>
+					</div>
+				</div>
+
+				<div class="col-12">
+					<div class="row">
+						<div class="col-6 col-lg-3">
+							<div class="step step-1 text-center ps-3 pe-3">
+								<span class="badge-number">1</span>
+								<h5>Create your NFT design contest</h5>
+								<p>Visualize a design that fits. Explain your expectations and let’s explore design inspirations.</p>
+							</div>
+						</div>
+
+						<div class="col-6 col-lg-3">
+							<div class="step step-2 text-center ps-3 pe-3 pt-3">
+								<span class="badge-number">2</span>
+								<h5>Your contest has been listed.</h5>
+								<p>Stay tuned and see the magic happens by the professional NFT designers.</p>
+							</div>
+						</div>
+
+						<div class="col-6 col-lg-3">
+							<div class="step step-3 text-center ps-3 pe-3">
+								<span class="badge-number">3</span>
+								<h5>Evaluate and refine</h5>
+								<p>Unlimited designs and revisions. Review and select the design you love. Let the community vote on the best designs.</p>
+							</div>
+						</div>
+
+						<div class="col-6 col-lg-3">
+							<div class="step step-4 text-center ps-3 pe-3 pt-3">
+								<span class="badge-number">4</span>
+								<h5>Hura!!! Get it done.</h5>
+								<p>Release award and get design with full intellectual property. Choose whatever format you prefer.</p>
+							</div>
+						</div>
+
 					</div>
 				</div>
 			</div>
