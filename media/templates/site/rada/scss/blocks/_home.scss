@@ -1,4 +1,3 @@
-
 // WHY RADA
 // ------------------------------------
 .fd-item {
@@ -35,7 +34,7 @@
 
 .ra-sec {
   .container {
-    padding: calc(var(--spacer) * 6) 0;
+    padding: calc(var(--spacer) * 8) 0;
   }
 }
 
@@ -84,6 +83,53 @@
     .btn {
       background-color: #84CC16;
       color: var(--white);
+    }
+  }
+}
+
+
+// LATEST CONTEST SECTION
+// ------------------------------------
+.sec-latest-contest {
+  border-top: 1px solid rgba(255,255,255,.08);
+}
+
+.contest-wrap {
+  position: relative;
+  min-height: 890px;
+  overflow: hidden;
+
+  .contest-row {
+    display: flex;
+    align-items: stretch;
+    overflow: hidden;
+    // animation: marquee 15s linear infinite;
+    // position: absolute;
+    width: 150%;
+
+    & + .contest-row {
+      margin-top: calc(var(--spacer) * 2);
+    }
+  }
+
+  .card {
+    --bs-gutter-x: 16px;
+
+    background-color: transparent;
+    border: 0;
+    min-width: 352px;
+    padding: 0 var(--bs-gutter-x);
+
+    .card-inner {
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: var(--border-radius);
+      text-align: center;
+    }
+
+    .card-name {
+      font-size: var(--h4-font-size);
+      color: var(--white);
+      margin-bottom: calc(var(--spacer) / 2);
     }
   }
 }
@@ -145,6 +191,77 @@
   }
 }
 
+// BLOG POST SECTION
+// ------------------------------------
+.sec-blog-post {
+  .sec-heading {
+    margin-bottom: calc(var(--spacer) * 4);
+
+    .lead {
+      opacity: 1;
+    }
+  }
+}
+
+.category-module.mod-list {
+  display: flex;
+  align-items: flex-start;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  .item-media {
+    margin-bottom: var(--spacer);
+  }
+
+  .item-meta {
+    color: #9CA3AF;
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+    font-weight: 400;
+    margin: 0 0 calc(var(--spacer) / 2) 0;
+
+    a {
+      color: var(--link-color);
+    }
+
+    span + span {
+      display: flex;
+      align-items: center;
+
+      &::before {
+        background-color: #9CA3AF;
+        border-radius: 50%;
+        content: "";
+        display: block;
+        height: 4px;
+        margin: 0 calc(var(--spacer) / 2);
+        width: 4px;
+      }
+    }
+  }
+
+  .item-title {
+    font-size: var(--h3-font-size);
+    font-weight: 500;
+    line-height: 28px;
+    margin-bottom: var(--spacer);
+
+    a {
+      color: #1F2937;
+      transition: var(--trans-base);
+
+      &:hover, &:focus, &:active {
+        color: var(--link-hover-color);
+      }
+    }
+  }
+
+  .item-introtext {
+  }
+}
+
 
 // SECTION 6
 // ------------------------------------
@@ -164,4 +281,11 @@
     height: 840px;
     width: 840px;
   }
+}
+
+
+/* keyframe */
+@keyframes marquee {
+  0% { left: 0; }
+  100% { left: -100%; }
 }

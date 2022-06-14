@@ -116,7 +116,9 @@ $wa->getAsset('style', 'fontawesome')->setAttribute('rel', 'lazy-stylesheet');
 			<div class="header-wrap d-flex align-items-center">
 				<!-- Brand logo -->
 				<div class="ra-brand">
-					<a href="/index.php" title="Rada network">Rada</a>
+					<a href="/index.php" title="Rada network">
+						<img src="<?php echo JUri::root(true); ?>/templates/rada/icons/logo.svg" alt="Rada.works" />
+					</a>
 				</div>
 				<!-- // Brand logo -->
 
@@ -136,228 +138,51 @@ $wa->getAsset('style', 'fontawesome')->setAttribute('rel', 'lazy-stylesheet');
 	</header>
 	<!-- // HEADER -->
 
+	<?php if($this->countModules('pos-hero')) : ?>
 	<!-- HERO -->
 	<div id="ra-hero" class="ra-sec ra-hero">
-		<div class="container">
-			<div class="row">
-				<div class="col-12 col-lg-5">
-					<div class="hero-ct">
-						<h1 class="mt-0 mb-3">A multichain <span>NFT design</span> platform</h1>
-						<p class="lead mt-0 mb-5">A multi-function platform where anyone can make money, simply by working.</p>
-						<div class="action-wrap">
-							<a href="#" title="Get started" class="btn btn-primary btn-lg btn-rounded">Get started</a>
-						</div>
-					</div>
-				</div>
-
-				<div class="hero-decor"></div>
-			</div>
-		</div>
+		<jdoc:include type="modules" name="pos-hero" style="none" />>
 	</div>
 	<!-- // HERO -->
+	<?php endif ?>
 
-	<!-- // HERO -->
-	<div class="ra-sec ra-sec-dark ra-sec-1">
-		<div class="container">
-			<div class="row">
-				<div class="col-12 col-lg-6">
-					<div class="ra-box ra-box-1">
-						<h4>For Project creators</h4>
-						<p>Work with the best dedicated NFT designers to get your perfect NFT designs.</p>
-						<div class="action-wrap">
-							<a href="#" title="I amm a project creator" class="btn btn-rounded">I'm a project creator</a>
-						</div>
-					</div>
-				</div>
-
-				<div class="col-12 col-lg-6">
-					<div class="ra-box ra-box-2">
-						<h4>For NFT Artists</h4>
-						<p>More designs & revisions from NFT designers around the world until your vision is satisfied.</p>
-						<div class="action-wrap">
-							<a href="#" title="I amm a project creator" class="btn btn-rounded">I'm an NFT artist</a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-
+	<?php if($this->countModules('pos-sec-1')) : ?>
 	<!-- SECTION 1 -->
-	<div class="ra-sec ra-sec-dark ra-sec-2">
-		<div class="container">
-			<div class="row">
-				<div class="col-12 col-lg-4">
-					<div class="sec-heading">
-						<h2>Why Rada.works?</h2>
-						<p class="lead">Our platform makes it possible for every artist to kickstart their Web3 career. Whether it is to take part in a NFT project or a Metaverse Game, artists can freely contribute and reap the reward in a completely trustless way.</p>
-					</div>
-				</div>
-
-				<div class="col-12 col-lg-4">
-					<div class="fd-item">
-						<span class="item-ico"><img src="<?php echo JUri::root(true); ?>/templates/rada/icons/ico-1.svg" alt="World-class NFT designers" /></span>
-						<div class="item-ct">
-							<h5>World-class NFT designers</h5>
-							<p>Work with the best dedicated NFT designers to get your perfect NFT designs.</p>
-						</div>
-					</div>
-
-					<div class="fd-item">
-						<span class="item-ico"><img src="<?php echo JUri::root(true); ?>/templates/rada/icons/ico-2.svg" alt="Full Ownership" /></span>
-						<div class="item-ct">
-							<h5>Full Ownership</h5>
-							<p>Once a project is marked done, the project creator owns full control of the art.</p>
-						</div>
-					</div>
-
-					<div class="fd-item">
-						<span class="item-ico"><img src="<?php echo JUri::root(true); ?>/templates/rada/icons/ico-3.svg" alt="Freely configure your contests" /></span>
-						<div class="item-ct">
-							<h5>Freely configure your contests</h5>
-							<p>Set your contest to private as you like, so only designers can view and submit.</p>
-						</div>
-					</div>
-				</div>
-
-				<div class="col-12 col-lg-4">
-					<div class="fd-item">
-						<span class="item-ico"><img src="<?php echo JUri::root(true); ?>/templates/rada/icons/ico-4.svg" alt="World-class NFT designers" /></span>
-						<div class="item-ct">
-							<h5>Multiple Designs & Revisions</h5>
-							<p>More designs & revisions from NFT designers around the world until your vision is satisfied.</p>
-						</div>
-					</div>
-
-					<div class="fd-item">
-						<span class="item-ico"><img src="<?php echo JUri::root(true); ?>/templates/rada/icons/ico-5.svg" alt="Full Ownership" /></span>
-						<div class="item-ct">
-							<h5>Trustless collaborations</h5>
-							<p>You can ask for refined design and release the award once you are satisfied with the design.</p>
-						</div>
-					</div>
-
-					<div class="fd-item">
-						<span class="item-ico"><img src="<?php echo JUri::root(true); ?>/templates/rada/icons/ico-6.svg" alt="Freely configure your contests" /></span>
-						<div class="item-ct">
-							<h5>Pay with Crypto</h5>
-							<p>Release awards in any supported token, any chain.</p>
-						</div>
-					</div>
-				</div>
-
-			</div>
-		</div>
+	<div class="ra-sec ra-sec-dark ra-sec-1">
+		<jdoc:include type="modules" name="pos-sec-1" style="none" />
 	</div>
 	<!-- // SECTION 1 -->
+	<?php endif ?>
 
 
-	<!-- SECTION 2 -->
-	<div class="ra-sec ra-sec-dark ra-sec-4">
-		<div class="container">
-
-			<div class="row align-items-center featured-row">
-				<div class="col-12 col-lg-7"><div class="item-decor"><img src="images/icons/ico-2.png" alt="Multi Entries from experienced designers." /></div></div>
-				<div class="col-12 col-lg-5">
-					<div class="">
-						<h2 class="mt-0 mb-4">Multi Entries from experienced designers.</h2>
-						<div class="fd-item">
-							<span class="item-ico"><img src="<?php echo JUri::root(true); ?>/templates/rada/icons/ico-7.svg" alt="Submit NFT design contest" /></span>
-							<div class="item-ct">
-								<h5>Submit NFT design contest</h5>
-								<p>Create NFT contests for which artists can easily join. Evaluate, refine, get designs, and release awards in popular supported token, reducing transaction fees.</p>
-							</div>
-						</div>
-
-						<div class="fd-item">
-							<span class="item-ico"><img src="<?php echo JUri::root(true); ?>/templates/rada/icons/ico-8.svg" alt="Rate and review designers" /></span>
-							<div class="item-ct">
-								<h5>Rate and review designers</h5>
-								<p>Work with the best dedicated NFT designers to get your perfect NFT designs.</p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-
-			<div class="row align-items-center featured-row">
-				<div class="col-12 col-lg-5">
-					<div class="">
-						<h2 class="mt-0 mb-4">Work from everywhere. Get reward with Crypto.</h2>
-						<div class="fd-item">
-							<span class="item-ico"><img src="<?php echo JUri::root(true); ?>/templates/rada/icons/ico-7.svg" alt="Submit NFT design contest" /></span>
-							<div class="item-ct">
-								<h5>Submit NFT design contest</h5>
-								<p>Create NFT contests for which artists can easily join. Evaluate, refine, get designs, and release awards in popular supported token, reducing transaction fees.</p>
-							</div>
-						</div>
-
-						<div class="fd-item">
-							<span class="item-ico"><img src="<?php echo JUri::root(true); ?>/templates/rada/icons/ico-8.svg" alt="Submit NFT design contest" /></span>
-							<div class="item-ct">
-								<h5>Rate and review designers</h5>
-								<p>Work with the best dedicated NFT designers to get your perfect NFT designs.</p>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-12 col-lg-7"><div class="item-decor"><img src="images/icons/ico-3.png" alt="Multi Entries from experienced designers." /></div></div>
-			</div>
-
-			<div class="row how-it-work">
-				<div class="col-12 col-lg-6 offset-lg-3">
-					<div class="sec-heading text-center pb-2">
-						<h2 class="mb-4">How it works?</h2>
-						<p class="lead mb-5">Anyone can create a contest and anyone can join as an artist. We escrow the fund in exchange between the parties until both are satisfied.</p>
-					</div>
-				</div>
-
-				<div class="col-12">
-					<div class="row">
-						<div class="col-6 col-lg-3">
-							<div class="step step-1 text-center ps-3 pe-3">
-								<span class="badge-number">1</span>
-								<h5>Create your NFT design contest</h5>
-								<p>Visualize a design that fits. Explain your expectations and let’s explore design inspirations.</p>
-							</div>
-						</div>
-
-						<div class="col-6 col-lg-3">
-							<div class="step step-2 text-center ps-3 pe-3 pt-3">
-								<span class="badge-number">2</span>
-								<h5>Your contest has been listed.</h5>
-								<p>Stay tuned and see the magic happens by the professional NFT designers.</p>
-							</div>
-						</div>
-
-						<div class="col-6 col-lg-3">
-							<div class="step step-3 text-center ps-3 pe-3">
-								<span class="badge-number">3</span>
-								<h5>Evaluate and refine</h5>
-								<p>Unlimited designs and revisions. Review and select the design you love. Let the community vote on the best designs.</p>
-							</div>
-						</div>
-
-						<div class="col-6 col-lg-3">
-							<div class="step step-4 text-center ps-3 pe-3 pt-3">
-								<span class="badge-number">4</span>
-								<h5>Hura!!! Get it done.</h5>
-								<p>Release award and get design with full intellectual property. Choose whatever format you prefer.</p>
-							</div>
-						</div>
-
-					</div>
-				</div>
-			</div>
-
-
-		</div> <!-- // Container -->
+	<?php if($this->countModules('pos-sec-2')) : ?>
+	<!-- WHY RADA SECTION -->
+	<div class="ra-sec ra-sec-dark ra-sec-2">
+		<jdoc:include type="modules" name="pos-sec-2" style="none" />
 	</div>
-	<!-- // SECTION 2 -->
+	<!-- // WHY RADA SECTION -->
+	<?php endif ?>
+
+	<?php if($this->countModules('pos-sec-3')) : ?>
+	<!-- LATEST CONTESTS SECTION -->
+	<div class="ra-sec ra-sec-dark sec-latest-contest">
+		<jdoc:include type="modules" name="pos-sec-3" style="none" />
+	</div>
+	<!-- // LATEST CONTESTS SECTION -->
+	<?php endif ?>
 
 
-	<!-- SECTION 5 -->
-	<div class="ra-sec ra-sec-5">
+	<?php if($this->countModules('pos-sec-4')) : ?>
+	<!-- SECTION 4 -->
+	<div class="ra-sec ra-sec-dark ra-sec-4">
+		<jdoc:include type="modules" name="pos-sec-4" style="none" />
+	</div>
+	<!-- // SECTION 4 -->
+	<?php endif ?>
+
+
+	<!-- BLOG POST -->
+	<div class="ra-sec ra-sec-5 sec-blog-post">
 		<div class="container">
 			<div class="row">
 				<div class="col-12 col-lg-6 offset-lg-3">
@@ -367,30 +192,21 @@ $wa->getAsset('style', 'fontawesome')->setAttribute('rel', 'lazy-stylesheet');
 					</div>
 				</div>
 			</div>
+
+			<jdoc:include type="modules" name="section-5" style="none" />
 		</div>
 	</div>
-	<!-- // SECTION 5 -->
+	<!-- // BLOG POST -->
 
+
+	<?php if($this->countModules('pos-sec-6')) : ?>
 	<!-- SECTION 6 -->
 	<div class="ra-sec ra-sec-primary ra-sec-6">
-		<div class="container">
-			<div class="row">
-				<div class="sec-decor">&nbsp;</div>
-
-				<div class="col-12 col-lg-5 offset-lg-7">
-					<div class="sec-heading">
-						<h2>Opps... Some text with two lines goes here</h2>
-						<p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ac leo dui. Sed porttitor augue erat, a hendrerit neque iverra et. Nulla ut nibh a metus.</p>
-						<div class="cta-wrap d-flex align-items-center">
-							<a href="#" title="Get design" class="btn btn-lg btn-rounded btn-light me-3">Get Design</a>
-							<a href="#" title="See contest"class="btn btn-lg btn-rounded btn-light">See contest</a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
+		<jdoc:include type="modules" name="pos-sec-6" style="none" />
 	</div>
 	<!-- // SECTION 6 -->
+	<?php endif ?>
+
 
 	<!-- FOOTER NAVIGATION -->
 	<div id="ra-footnav" class="ra-sec-dark ra-footnav">

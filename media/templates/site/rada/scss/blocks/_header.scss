@@ -1,6 +1,8 @@
 // Header
 .ra-header {
   padding: calc(var(--spacer) * 2) 0;
+  position: relative;
+  z-index: 300;
 
   .ra-mainnav {
     .navbar {

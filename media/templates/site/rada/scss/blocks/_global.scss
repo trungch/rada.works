@@ -87,7 +87,9 @@ a {
   font-weight: 500;
 }
 
-.btn-primary {
+.btn.btn-primary {
+  color: var(--white);
+  
   &:hover,
   &:focus {
   }
